@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // / Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử. 
+        //Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+
+ 
+        var arr = [12, 5, 9, 17, 3, 8, 11, 6, 14, 10];
+  
+        console.log("Mảng ban đầu là: " + arr);
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = i + 1; j < arr.length; j++) {          
+                if (arr[i] < arr[j]) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        console.log("Mảng sau khi sắp xếp là: " + arr);
+
+    </script>
+</body>
+
+</html>

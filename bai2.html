@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử khác nhau. 
+        //Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.
+
+        // .includes kiểm tra xem  các phần tử có trùng lặp ko  và trả về kết quả là true,  false
+        let max = 0;
+        for (let i = 0; i < 5; i++) {
+            let number = +prompt("Nhập số thứ " + (i + 1));
+            arr[i] = number;
+            if (arr.indexOf(number) !== -1){ 
+                alert("Số bạn nhập đã trùng, mời nhập lại");
+                --i;
+                continue;
+            }
+        }
+        max = arr[0]
+        for(let x in arr){
+            if (max<arr[x]) {
+                max =arr[x]
+            }
+        }
+        console.log("Số lớn nhất trong mảng đó là " + max);
+        console.log("Vị trí của phần tử đó trong mảng là " +arr.indexOf(max));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

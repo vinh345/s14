@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử.
+        //Nhập phần tử số nguyên và kiểm tra xem số đó có thuộc mảng đã cho không? 
+        //Nếu có thuộc mảng đã cho xoá số đó khỏi mảng.
+
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        let a = +prompt("moi nhap vao 1 so nguyen");
+
+        for (let i = 0; i < array.length; i++) {
+            if (a == array[i]) {
+                delete array[i];
+            }
+        }
+        console.log(array);
+    </script>
+</body>
+
+</html>
